@@ -1,0 +1,234 @@
+/* إعدادات الصفحة العامة */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d1b2a;
+    color: white;
+}
+
+/* شريط التنقل */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    background-color: #1e2a3a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar a.active,
+.navbar a:hover {
+    color: #00e0ff;
+}
+
+/* زر تبديل اللغة */
+.lang-switch {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 12px 24px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    z-index: 9999;
+}
+
+.lang-switch:hover {
+    transform: translateX(10px);
+    background-color: #0056b3;
+}
+
+.lang-switch:active {
+    transform: translateX(-10px);
+    background-color: #004085;
+}
+
+/* الأقسام */
+.content {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* قسم Home */
+.welcome-title {
+    font-size: 50px;
+    color: #00e0ff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.welcome-article {
+    margin: 20px auto;
+    max-width: 800px;
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: justify;
+    color: #ccc;
+}
+
+/* قسم Content */
+.goals-title {
+    font-size: 50px;
+    letter-spacing: 5px;
+    color: #00e0ff;
+}
+
+.goals-content {
+    background: linear-gradient(90deg, #00e0ff, #00ff9e);
+    padding: 20px;
+    border-radius: 10px;
+    color: #000;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.goals-content h3 {
+    margin: 10px 0;
+}
+
+/* قسم About */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+.about-text {
+    width: 60%;
+    text-align: justify;
+    color: #ccc;
+}
+
+.about-title {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about-article {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.about-images {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-image {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* قسم Gallery داخل About */
+.images-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.image-box {
+    background-color: #1e2a3a;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.image-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* قسم Team */
+.team-title {
+    font-size: 50px;
+    color: #00e0ff;
+}
+
+.team-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.team-member {
+    background-color: #1e2a3a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.team-member h3 {
+    font-size: 25px;
+}
+
+.supervisor {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+/* قسم Others */
+.conclusion-section {
+    background: linear-gradient(90deg, #00e0ff, #00ff9e);
+    padding: 20px;
+    border-radius: 10px;
+    color: #000;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+/* الفوتر */
+.footer {
+    background-color: #1e2a3a;
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.footer p {
+    font-size: 18px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons .icon {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+.social-icons .icon:hover {
+    color: #00e0ff;
+}

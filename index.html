@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prosthetic Hand Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="en"> <!-- اللغة الافتراضية هي الإنجليزية -->
+    <!-- زر تبديل اللغة -->
+    <button class="lang-switch" onclick="toggleLanguage()">EN / AR</button>
+
+    <!-- شريط التنقل -->
+    <div class="navbar">
+        <a href="#home" class="active" data-en="Home" data-ar="الرئيسية">Home</a>
+        <a href="#content" data-en="Content" data-ar="المحتوى">Content</a>
+        <a href="#about" data-en="About" data-ar="عن المشروع">About</a>
+        <a href="#team" data-en="Team" data-ar="الفريق">Team</a>
+        <a href="#others" data-en="Others" data-ar="أخرى">Others</a>
+    </div>
+
+    <!-- قسم Home -->
+    <div id="home" class="content">
+        <div class="welcome-title" data-en="Welcome to Our Website" data-ar="مرحبًا بكم في موقعنا">Welcome to Our Website</div>
+        <div class="welcome-article">
+            <p data-en="Welcome to our project website! Our goal is to create innovative solutions that make life easier for everyone. Whether you're interested in technology, healthcare, or education, we believe you'll find something inspiring here. Feel free to explore our content and learn more about our mission!"
+               data-ar="مرحبًا بكم في موقع مشروعنا! هدفنا هو إنشاء حلول مبتكرة تسهل الحياة للجميع. سواء كنت مهتمًا بالتكنولوجيا أو الرعاية الصحية أو التعليم، نعتقد أنك ستجد هنا شيئًا يلهمك. لا تتردد في استكشاف محتوياتنا ومعرفة المزيد عن مهمتنا!">
+               Welcome to our project website! Our goal is to create innovative solutions that make life easier for everyone...</p>
+        </div>
+    </div>
+
+    <!-- قسم Content -->
+    <div id="content" class="content">
+        <div class="goals-title" data-en="OUR GOALS" data-ar="أهدافنا">OUR GOALS</div>
+        <div class="goals-content">
+            <h3 data-en="01 Accessibility" data-ar="الوصولية">Accessibility:</h3>
+            <p data-en="Designed for individuals with disabilities or amputations, providing a practical and affordable solution." data-ar="مصممة للأفراد ذوي الإعاقات أو البتر، مما يوفر حلاً عمليًا وميسورًا.">Designed for individuals with disabilities or amputations...</p>
+
+            <h3 data-en="02 Simplicity and Efficiency" data-ar="البساطة والكفاءة">Simplicity and Efficiency:</h3>
+            <p data-en="Uses the EMG sensor to convert muscle signals into commands that control finger movement, making the system easy to use." data-ar="يستخدم جهاز استشعار EMG لتحويل إشارات العضلات إلى أوامر تتحكم في حركة الأصابع، مما يجعل النظام سهل الاستخدام.">Uses the EMG sensor...</p>
+
+            <h3 data-en="03 Educational" data-ar="تعليمي">Educational:</h3>
+            <p data-en="Can be used as a learning tool in biomedical engineering and robotics fields." data-ar="يمكن استخدامه كأداة تعليمية في مجالات الهندسة الطبية الحيوية والروبوتات.">Can be used as a learning tool...</p>
+        </div>
+    </div>
+
+    <!-- قسم About -->
+    <div id="about" class="content">
+        <div class="about-container">
+            <div class="about-text">
+                <div class="about-title" data-en="About the Prosthetic Hand" data-ar="عن اليد الصناعية">About the Prosthetic Hand</div>
+                <div class="about-article">
+                    <p data-en="The prosthetic hand is a groundbreaking innovation that combines cutting-edge technology with practical usability. It is designed to restore mobility and functionality for individuals who have lost a hand due to injury, disease, or congenital conditions." 
+                       data-ar="اليد الصناعية هي ابتكار رائد يجمع بين التكنولوجيا المتطورة والاستخدام العملي. تم تصميمها لاستعادة الحركة والوظائف للأفراد الذين فقدوا يدًا بسبب إصابة أو مرض أو حالات خلقية.">The prosthetic hand...</p>
+                    <p data-en="Using advanced EMG sensors, the prosthetic hand can detect muscle signals from the user's arm and translate them into precise finger movements, enabling a wide range of activities."
+                       data-ar="باستخدام أجهزة استشعار EMG المتقدمة، يمكن لليد الصناعية اكتشاف إشارات العضلات من ذراع المستخدم وترجمتها إلى حركات دقيقة للأصابع، مما يتيح مجموعة واسعة من الأنشطة.">Using advanced EMG sensors...</p>
+                </div>
+            </div>
+            <div class="about-images">
+                <img src="0.jpg" alt="Prosthetic Hand Image 1" class="about-image">
+            </div>
+        </div>
+
+        <!-- قسم Gallery داخل About -->
+        <div class="images-section">
+            <h2 data-en="Gallery" data-ar="المعرض">Gallery</h2>
+            <div class="image-container">
+                <div class="image-box">
+                    <img src="1.jpg" alt="Gallery Image 1">
+                </div>
+                <div class="image-box">
+                    <img src="2.jpg" alt="Gallery Image 2">
+                </div>
+                <div class="image-box">
+                    <img src="3.jpg" alt="Gallery Image 3">
+                </div>
+                <div class="image-box">
+                    <img src="4.jpg" alt="Gallery Image 4">
+                </div>
+                <div class="image-box">
+                    <img src="5.jpg" alt="Gallery Image 5">
+                </div>
+                <div class="image-box">
+                    <img src="6.jpg" alt="Gallery Image 6">
+                </div>
+                <div class="image-box">
+                    <img src="7.jpg" alt="Gallery Image 7">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- قسم Team -->
+    <div id="team" class="content">
+        <div class="team-title" data-en="Our Team" data-ar="فريقنا">Our Team</div>
+        <div class="team-content">
+            <!-- أعضاء الفريق -->
+            <div class="team-member">
+                <h3 data-en="Member 1" data-ar="عضو 1">Member 1</h3>
+                <p data-en="Mohamed Alaa" data-ar="محمد علاء">Mohamed Alaa</p>
+            </div>
+            <div class="team-member">
+                <h3 data-en="Member 2" data-ar="عضو 2">Member 2</h3>
+                <p data-en="Ahmed Galal" data-ar="أحمد جلال">Ahmed Galal</p>
+            </div>
+            <div class="team-member">
+                <h3 data-en="Member 3" data-ar="عضو 3">Member 3</h3>
+                <p data-en="Mustafa Abdo" data-ar="مصطفى عبدو">Mustafa Abdo</p>
+            </div>
+            <div class="team-member">
+                <h3 data-en="Member 4" data-ar="عضو 4">Member 4</h3>
+                <p data-en="Amr Khaled" data-ar="عمرو خالد">Amr Khaled</p>
+            </div>
+            <div class="team-member">
+                <h3 data-en="Member 5" data-ar="عضو 5">Member 5</h3>
+                <p data-en="Omer Hisham" data-ar="عمر هشام">Omer Hisham</p>
+            </div>
+            <div class="team-member">
+                <h3 data-en="Member 6" data-ar="عضو 6">Member 6</h3>
+                <p data-en="AbdElrahem Abdullah" data-ar="عبدالرحيم عبدالله">AbdElrahem Abdullah</p>
+            </div>
+            <div class="team-member">
+                <h3 data-en="Member 7" data-ar="عضو 7">Member 7</h3>
+                <p data-en="Mariam Atef" data-ar="مريم عاطف">Mariam Atef</p>
+            </div>
+            <div class="team-member">
+                <h3 data-en="Member 8" data-ar="عضو 8">Member 8</h3>
+                <p data-en="Sama Taha" data-ar="سما طه">Sama Taha</p>
+            </div>
+            <div class="team-member">
+                <h3 data-en="Member 9" data-ar="عضو 9">Member 9</h3>
+                <p data-en="Rehab Yehia" data-ar="رحاب يحيى">Rehab Yehia</p>
+            </div>
+        </div>
+
+        <div class="supervisor">
+            <h1 data-en="Supervisor" data-ar="المشرف">Supervisor</h1>
+            <p><h2 data-en="ENG: Doaa Fakhry" data-ar="المهندسة: دعاء فخري">ENG : Doaa Fakhry</h2></p>
+        </div>
+    </div>
+
+    <!-- قسم Others -->
+    <div id="others" class="content">
+        <div class="conclusion-section">
+            <h2 data-en="Conclusion" data-ar="الخاتمة">Conclusion</h2>
+            <p data-en="Thank you for exploring our website. We hope you found the information about our prosthetic hand project inspiring and informative. Our mission is to improve lives through technology, and we appreciate your interest in our work. Feel free to contact us for further details!"
+               data-ar="شكرًا لاستكشافكم موقعنا الإلكتروني. نأمل أن تكونوا قد وجدتم المعلومات حول مشروع اليد الصناعية ملهمة ومفيدة. مهمتنا هي تحسين الحياة من خلال التكنولوجيا، ونقدر اهتمامكم في عملنا. لا تترددوا في التواصل معنا لمزيد من التفاصيل!">
+               Thank you for exploring our website...</p>
+        </div>
+    </div>
+
+    <!-- الفوتر -->
+    <div class="footer">
+        <p data-en="Contact Us: 01095568590" data-ar="اتصل بنا: 01095568590">Contact Us: 01095568590</p>
+        <div class="social-icons">
+            <a href="https://t.me/yourtelegram" target="_blank" class="icon">
+                <i class="fab fa-telegram"></i> Telegram
+            </a>
+            <a href="https://chat.whatsapp.com/Fcps0NFIk7y5R28h2ZTfDB" target="_blank" class="icon">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+        <p><a href="https://www.bing.com/ck/a?!&&p=4bfe437caf087e8cb9cc7f47cd0c65ba6182e28502d13cccca5de964af4c405eJmltdHM9MTczMTcxNTIwMA&ptn=3&ver=2&hsh=4&fclid=2a51b093-c814-6655-1323-a5bbc96367e3&psq=%d8%ac%d8%a7%d9%85%d8%b9%d8%a9+%d8%a7%d8%b3%d9%8a%d9%88%d8%b7+%d8%a7%d9%84%d8%ac%d8%af%d9%8a%d8%af%d8%a9+%d8%a7%d9%84%d8%aa%d9%83%d9%86%d9%88%d9%84%d9%88%d8%ac%d9%8a%d8%a9&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL0Fzc2l1dFRlY2hVbml2ZXJzaXR5Lw&ntb=1">NATU</a></p>
+        <p data-en="Prosthetic Hand Project - All Rights Reserved" data-ar="مشروع اليد الصناعية - جميع الحقوق محفوظة">Prosthetic Hand Project - All Rights Reserved</p>
+    </div>
+
+    <script>
+        function toggleLanguage() {
+            const body = document.body;
+            const navbarLinks = document.querySelectorAll('.navbar a');
+            const contentElements = document.querySelectorAll('[data-en], [data-ar]');
+            const isEnglish = body.classList.contains('en');
+            
+            // تغيير الفئة بين العربية والإنجليزية
+            if (isEnglish) {
+                body.classList.remove('en');
+                body.classList.add('ar');
+                document.dir = 'rtl'; // تعيين اتجاه النصوص من اليمين لليسار
+            } else {
+                body.classList.remove('ar');
+                body.classList.add('en');
+                document.dir = 'ltr'; // تعيين اتجاه النصوص من اليسار لليمين
+            }
+
+            // تحديث النصوص
+            contentElements.forEach(el => {
+                const enText = el.getAttribute('data-en');
+                const arText = el.getAttribute('data-ar');
+                if (isEnglish) {
+                    el.innerHTML = arText;
+                } else {
+                    el.innerHTML = enText;
+                }
+            });
+
+            // تحديث روابط شريط التنقل
+            navbarLinks.forEach(link => {
+                const enText = link.getAttribute('data-en');
+                const arText = link.getAttribute('data-ar');
+                if (isEnglish) {
+                    link.innerHTML = arText;
+                } else {
+                    link.innerHTML = enText;
+                }
+            });
+        }
+    </script>
+</body>
+</html>
