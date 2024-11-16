@@ -233,6 +233,19 @@ body {
     color: #00e0ff;
 }
 
+/* تنسيق كلمة NATU كرابط */
+.natu-link {
+    color: #00e0ff; /* تغيير اللون إلى الأزرق */
+    text-decoration: none; /* إزالة التسطير تحت الرابط */
+    font-weight: bold; /* جعل الكلمة غامقة */
+    font-size: 18px;
+    transition: color 0.3s ease; /* تأثير التغيير في اللون */
+}
+
+.natu-link:hover {
+    color: #ff5733; /* تغيير اللون عند التمرير فوق الرابط */
+}
+
 /* Media Queries لتعديل التصميم للأجهزة الصغيرة */
 @media (max-width: 1024px) {
     .navbar {
