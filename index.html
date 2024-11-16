@@ -35,7 +35,7 @@
         <div class="goals-title" data-en="OUR GOALS" data-ar="أهدافنا">OUR GOALS</div>
         <div class="goals-content">
             <h3 data-en="01 Accessibility" data-ar="الوصولية">Accessibility:</h3>
-            <p data-en="Designed for individuals with disabilities or amputations, providing a practical and affordable solution." data-ar="مصممة للأفراد ذوي الإعاقات أو البتر، مما يوفر حلاً عمليًا وميسورًا.">Designed for individuals with disabilities...</p>
+            <p data-en="Designed for individuals with disabilities or amputations, providing a practical and affordable solution." data-ar="مصممة للأفراد ذوي الإعاقات أو البتر، مما يوفر حلاً عمليًا وميسورًا.">Designed for individuals...</p>
 
             <h3 data-en="02 Simplicity and Efficiency" data-ar="البساطة والكفاءة">Simplicity and Efficiency:</h3>
             <p data-en="Uses the EMG sensor to convert muscle signals into commands that control finger movement, making the system easy to use." data-ar="يستخدم جهاز استشعار EMG لتحويل إشارات العضلات إلى أوامر تتحكم في حركة الأصابع، مما يجعل النظام سهل الاستخدام.">Uses the EMG sensor...</p>
@@ -95,7 +95,6 @@
     <div id="team" class="content">
         <div class="team-title" data-en="Our Team" data-ar="فريقنا">Our Team</div>
         <div class="team-content">
-            <!-- أعضاء الفريق -->
             <div class="team-member">
                 <h3 data-en="Member 1" data-ar="عضو 1">Member 1</h3>
                 <p data-en="Mohamed Alaa" data-ar="محمد علاء">Mohamed Alaa</p>
@@ -130,7 +129,7 @@
             </div>
             <div class="team-member">
                 <h3 data-en="Member 9" data-ar="عضو 9">Member 9</h3>
-                <p data-en="Mohamed Eid" data-ar="محمد عيد">Mohamed Eid</p>
+                <p data-en="Ahmed Ali" data-ar="أحمد علي">Ahmed Ali</p>
             </div>
         </div>
     </div>
@@ -138,8 +137,8 @@
     <!-- قسم Others -->
     <div id="others" class="content">
         <div class="conclusion-section">
-            <h3 data-en="Conclusion" data-ar="الخاتمة">Conclusion</h3>
-            <p data-en="This project represents a unique opportunity to contribute to the development of prosthetic technology and help people regain their independence." data-ar="يمثل هذا المشروع فرصة فريدة للمساهمة في تطوير تكنولوجيا الأطراف الصناعية ومساعدة الناس على استعادة استقلالهم.">This project represents...</p>
+            <h3 data-en="Thank You for Visiting" data-ar="شكراً لزيارتكم">Thank You for Visiting</h3>
+            <p data-en="We hope this project inspires you to innovate and make a positive change in the world. Stay tuned for future developments!" data-ar="نأمل أن يلهمك هذا المشروع للابتكار وإحداث تغيير إيجابي في العالم. ترقبوا التطورات المستقبلية!">We hope this project...</p>
         </div>
     </div>
 
@@ -147,20 +146,21 @@
     <div class="footer">
         <p>&copy; 2024 Prosthetic Hand Project</p>
         <div class="social-icons">
-            <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+            <!-- أيقونة واتساب -->
+            <a href="https://wa.me/01095568590" class="icon" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            
+            <!-- أيقونة تيلجرام -->
+            <a href="https://t.me/01095568590" class="icon" target="_blank">
+                <i class="fab fa-telegram"></i>
+            </a>
+
+            <!-- عرض الرقم مباشرة -->
+            <p>رقم الهاتف: <a href="tel:+201095568590">01095568590</a></p>
         </div>
     </div>
 
-    <!-- سكربت لتبديل اللغة -->
-    <script>
-        function toggleLanguage() {
-            const lang = document.body.classList.toggle("ar") ? "ar" : "en";
-            document.querySelectorAll("[data-" + lang + "]").forEach(el => {
-                el.textContent = el.getAttribute("data-" + lang);
-            });
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
