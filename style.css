@@ -232,3 +232,90 @@ body {
 .social-icons .icon:hover {
     color: #00e0ff;
 }
+
+/* Media Queries لتعديل التصميم للأجهزة الصغيرة */
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: row;
+    }
+
+    .team-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .image-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .content {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .image-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .welcome-title {
+        font-size: 40px;
+    }
+
+    .welcome-article {
+        font-size: 18px;
+    }
+
+    .goals-title {
+        font-size: 35px;
+    }
+
+    .about-title {
+        font-size: 30px;
+    }
+
+    .about-article {
+        font-size: 16px;
+    }
+
+    .team-member {
+        margin-bottom: 20px;
+    }
+
+    .footer p {
+        font-size: 16px;
+    }
+
+    .lang-switch {
+        font-size: 14px;
+        padding: 10px 20px;
+        left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lang-switch {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .image-box img {
+        height: 150px;
+    }
+}
