@@ -35,7 +35,7 @@
         <div class="goals-title" data-en="OUR GOALS" data-ar="أهدافنا">OUR GOALS</div>
         <div class="goals-content">
             <h3 data-en="01 Accessibility" data-ar="الوصولية">Accessibility:</h3>
-            <p data-en="Designed for individuals with disabilities or amputations, providing a practical and affordable solution." data-ar="مصممة للأفراد ذوي الإعاقات أو البتر، مما يوفر حلاً عمليًا وميسورًا.">Designed for individuals with disabilities or amputations...</p>
+            <p data-en="Designed for individuals with disabilities or amputations, providing a practical and affordable solution." data-ar="مصممة للأفراد ذوي الإعاقات أو البتر، مما يوفر حلاً عمليًا وميسورًا.">Designed for individuals with disabilities...</p>
 
             <h3 data-en="02 Simplicity and Efficiency" data-ar="البساطة والكفاءة">Simplicity and Efficiency:</h3>
             <p data-en="Uses the EMG sensor to convert muscle signals into commands that control finger movement, making the system easy to use." data-ar="يستخدم جهاز استشعار EMG لتحويل إشارات العضلات إلى أوامر تتحكم في حركة الأصابع، مما يجعل النظام سهل الاستخدام.">Uses the EMG sensor...</p>
@@ -130,79 +130,35 @@
             </div>
             <div class="team-member">
                 <h3 data-en="Member 9" data-ar="عضو 9">Member 9</h3>
-                <p data-en="Rehab Yehia" data-ar="رحاب يحيى">Rehab Yehia</p>
+                <p data-en="Mohamed Eid" data-ar="محمد عيد">Mohamed Eid</p>
             </div>
-        </div>
-
-        <div class="supervisor">
-            <h1 data-en="Supervisor" data-ar="المشرف">Supervisor</h1>
-            <p><h2 data-en="ENG: Doaa Fakhry" data-ar="المهندسة: دعاء فخري">ENG : Doaa Fakhry</h2></p>
         </div>
     </div>
 
     <!-- قسم Others -->
     <div id="others" class="content">
         <div class="conclusion-section">
-            <h2 data-en="Conclusion" data-ar="الخاتمة">Conclusion</h2>
-            <p data-en="Thank you for exploring our website. We hope you found the information about our prosthetic hand project inspiring and informative. Our mission is to improve lives through technology, and we appreciate your interest in our work. Feel free to contact us for further details!"
-               data-ar="شكرًا لاستكشافكم موقعنا الإلكتروني. نأمل أن تكونوا قد وجدتم المعلومات حول مشروع اليد الصناعية ملهمة ومفيدة. مهمتنا هي تحسين الحياة من خلال التكنولوجيا، ونقدر اهتمامكم في عملنا. لا تترددوا في التواصل معنا لمزيد من التفاصيل!">
-               Thank you for exploring our website...</p>
+            <h3 data-en="Conclusion" data-ar="الخاتمة">Conclusion</h3>
+            <p data-en="This project represents a unique opportunity to contribute to the development of prosthetic technology and help people regain their independence." data-ar="يمثل هذا المشروع فرصة فريدة للمساهمة في تطوير تكنولوجيا الأطراف الصناعية ومساعدة الناس على استعادة استقلالهم.">This project represents...</p>
         </div>
     </div>
 
     <!-- الفوتر -->
     <div class="footer">
-        <p data-en="Contact Us: 01095568590" data-ar="اتصل بنا: 01095568590">Contact Us: 01095568590</p>
+        <p>&copy; 2024 Prosthetic Hand Project</p>
         <div class="social-icons">
-            <a href="https://t.me/yourtelegram" target="_blank" class="icon">
-                <i class="fab fa-telegram"></i> Telegram
-            </a>
-            <a href="https://chat.whatsapp.com/Fcps0NFIk7y5R28h2ZTfDB" target="_blank" class="icon">
-                <i class="fab fa-whatsapp"></i> WhatsApp
-            </a>
+            <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
         </div>
-        <p><a href="https://www.bing.com/ck/a?!&&p=4bfe437caf087e8cb9cc7f47cd0c65ba6182e28502d13cccca5de964af4c405eJmltdHM9MTczMTcxNTIwMA&ptn=3&ver=2&hsh=4&fclid=2a51b093-c814-6655-1323-a5bbc96367e3&psq=%d8%ac%d8%a7%d9%85%d8%b9%d8%a9+%d8%a7%d8%b3%d9%8a%d9%88%d8%b7+%d8%a7%d9%84%d8%ac%d8%af%d9%8a%d8%af%d8%a9+%d8%a7%d9%84%d8%aa%d9%83%d9%86%d9%88%d9%84%d9%88%d8%ac%d9%8a%d8%a9&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL0Fzc2l1dFRlY2hVbml2ZXJzaXR5Lw&ntb=1">NATU</a></p>
-        <p data-en="Prosthetic Hand Project - All Rights Reserved" data-ar="مشروع اليد الصناعية - جميع الحقوق محفوظة">Prosthetic Hand Project - All Rights Reserved</p>
     </div>
 
+    <!-- سكربت لتبديل اللغة -->
     <script>
         function toggleLanguage() {
-            const body = document.body;
-            const navbarLinks = document.querySelectorAll('.navbar a');
-            const contentElements = document.querySelectorAll('[data-en], [data-ar]');
-            const isEnglish = body.classList.contains('en');
-            
-            // تغيير الفئة بين العربية والإنجليزية
-            if (isEnglish) {
-                body.classList.remove('en');
-                body.classList.add('ar');
-                document.dir = 'rtl'; // تعيين اتجاه النصوص من اليمين لليسار
-            } else {
-                body.classList.remove('ar');
-                body.classList.add('en');
-                document.dir = 'ltr'; // تعيين اتجاه النصوص من اليسار لليمين
-            }
-
-            // تحديث النصوص
-            contentElements.forEach(el => {
-                const enText = el.getAttribute('data-en');
-                const arText = el.getAttribute('data-ar');
-                if (isEnglish) {
-                    el.innerHTML = arText;
-                } else {
-                    el.innerHTML = enText;
-                }
-            });
-
-            // تحديث روابط شريط التنقل
-            navbarLinks.forEach(link => {
-                const enText = link.getAttribute('data-en');
-                const arText = link.getAttribute('data-ar');
-                if (isEnglish) {
-                    link.innerHTML = arText;
-                } else {
-                    link.innerHTML = enText;
-                }
+            const lang = document.body.classList.toggle("ar") ? "ar" : "en";
+            document.querySelectorAll("[data-" + lang + "]").forEach(el => {
+                el.textContent = el.getAttribute("data-" + lang);
             });
         }
     </script>
