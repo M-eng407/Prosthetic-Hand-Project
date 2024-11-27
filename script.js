@@ -17,6 +17,15 @@ function toggleLanguage() {
         } else {
             element.textContent = arText;
         }
+        function refreshContent() {
+  fetch('your_endpoint_here')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('your-div-id').innerHTML = data;
+    })
+    .catch(error => console.error('Error:', error));
+}
+
     });
 
     // تبديل الفئة الخاصة بالـ body لتحديد اللغة الحالية
