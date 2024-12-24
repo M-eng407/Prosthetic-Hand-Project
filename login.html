@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page | صفحة تسجيل الدخول</title>
+    <style>
+        :root {
+            --gradient-1: #4158d0;
+            --gradient-2: #c850c0;
+            --gradient-3: #ffcc70;
+            --card-bg-light: rgba(255, 255, 255, 0.9);
+            --card-bg-dark: rgba(25, 25, 25, 0.9);
+            --text-color-light: #333;
+            --text-color-dark: #fff;
+            --input-bg-light: rgba(255, 255, 255, 0.95);
+            --input-bg-dark: rgba(45, 45, 45, 0.95);
+            --button-hover: #ff6b6b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(
+                45deg,
+                var(--gradient-1),
+                var(--gradient-2),
+                var(--gradient-3)
+            );
+            background-size: 300% 300%;
+            animation: gradientBG 12s ease infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .login-container {
+            background: var(--card-bg-light);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            position: relative;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .dark-mode .login-container {
+            background: var(--card-bg-dark);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .controls {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 15px;
+            z-index: 1000;
+        }
+
+        .control-button {
+            width: 45px;
+            height: 45px;
+            padding: 10px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .control-button:hover {
+            transform: scale(1.1) rotate(10deg);
+            background: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .dark-mode .control-button {
+            background: rgba(0, 0, 0, 0.25);
+            color: white;
+        }
+
+        .dark-mode .control-button:hover {
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        h2 {
+            color: var(--text-color-light);
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 2.2em;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .dark-mode h2 {
+            color: var(--text-color-dark);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--text-color-light);
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .dark-mode label {
+            color: var(--text-color-dark);
+        }
+
+        input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            background: var(--input-bg-light);
+            color: var(--text-color-light);
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .dark-mode input {
+            background: var(--input-bg-dark);
+            color: var(--text-color-dark);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        input:focus {
+            border-color: var(--gradient-2);
+            outline: none;
+            box-shadow: 0 0 15px rgba(200, 80, 192, 0.3);
+        }
+
+        button[type="button"] {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(45deg, var(--gradient-1), var(--gradient-2));
+            color: white;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        button[type="submet"]:hover {
+            background: linear-gradient(45deg, var(--gradient-2), var(--button-hover));
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .forgot-password {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .forgot-password a {
+            color: var(--gradient-2);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .forgot-password a:hover {
+            color: var(--button-hover);
+            text-decoration: underline;
+        }
+
+        [lang="ar"] {
+            direction: rtl;
+            display: none;
+        }
+
+        [lang="en"] {
+            direction: ltr;
+        }
+
+        /* Hover Effects */
+        .login-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 480px) {
+            .login-container {
+                width: 90%;
+                padding: 20px;
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- أزرار التحكم -->
+    <div class="controls">
+        <button class="control-button" onclick="toggleLanguage()">🌐</button>
+        <button class="control-button" onclick="toggleDarkMode()">🌓</button>
+    </div>
+
+    <div class="login-container">
+        <!-- باقي الكود كما هو -->
+
+        <!-- English Form -->
+        <div lang="en">
+            <h2>Welcome Back</h2>
+            <form>
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" required placeholder="Enter your username">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" required placeholder="Enter your password">
+                </div>
+                <button type="button"onclick="goToHome()"> Sign In</button>
+                <div class="forgot-password">
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Arabic Form -->
+        <div lang="ar">
+            <h2>مرحباً بعودتك</h2>
+            <form>
+                <div class="form-group">
+                    <label>اسم المستخدم</label>
+                    <input type="text" required placeholder="ادخل اسم المستخدم">
+                </div>
+                <div class="form-group">
+                    <label>كلمة المرور</label>
+                    <input type="password" required placeholder="ادخل كلمة المرور">
+                </div>
+                <button type="submit">تسجيل الدخول</button>
+                <div class="forgot-password">
+                    <a href="#">نسيت كلمة المرور؟</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function toggleLanguage() {
+            const enForm = document.querySelector('[lang="en"]');
+            const arForm = document.querySelector('[lang="ar"]');
+            if (enForm.style.display === 'none') {
+                enForm.style.display = 'block';
+                arForm.style.display = 'none';
+            } else {
+                enForm.style.display = 'none';
+                arForm.style.display = 'block';
+            }
+        }
+
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+        function goToHome() {
+        window.location.href = "C:/Users/DELL/Desktop/login/home.html";  // إعادة التوجيه إلى الصفحة الرئيسية
+    }
+
+    </script>
+</body>
+</html>
